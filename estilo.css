@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+html{
+    margin: 0;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+body* {
+    box-sizing: border-box;
+}
+
+.login-page{
+    width: 100vw;
+    height: 100vh;
+    background: #001641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto-esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-page h1{
+    color: beige;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.texto-esquerda > h1{
+    font-size: 3em;
+}
+
+.card-login > h1{
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.img-esquerda{
+    width: 35vw;
+}
+
+.texto-direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 8%;
+    background: #002679;
+    border-radius: 20px;
+    
+}
+
+.form{
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000088;
+    outline: none;
+    box-sizing: border-box;
+    background: #063bad;
+
+}
+
+.form > label{
+    margin-bottom: 10px;
+}
+
+.form > input{
+    margin-bottom: 10px;
+}
+
+
+
+.botao{
+    color: aliceblue;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 10px 40px -12px black;
+    background: url(/bg.jpg);
+    transition: 900ms;
+}
+
+.botao:hover{
+    transform: scale(0.99);
+}
+input:hover{
+    transform: scale(0.99);
+}
+
+@media screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-page{
+        flex-direction: column;
+    }
+
+    .texto-esquerda > h1{
+       display: none;
+    }
+
+    .texto-esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-direita{
+        width: 100%;
+        height: auto;
+        margin: 3px;
+    }
+
+    .img-esquerda{
+        width: 40vh ;
+    }
+    .card-login{
+        width: 70%;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .texto-esquerda > h1{
+        display: none;
+     }
+    .card-login{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
